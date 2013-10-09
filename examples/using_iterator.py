@@ -15,10 +15,11 @@ JAMA_EXAMPLE_NODE_ID, JAMA_EXAMPLE_TYPE = 10552, 87
 
 example_leaf = Leaf(JAMA_EXAMPLE_NODE_ID, JAMA_EXAMPLE_TYPE)
 
-example_item_generator = api.create_leaf_generator(example_leaf,
-                                                   ('name',
-                                                    ('event_code', 'code')
-                                                   ))
+example_item_generator = api.create_leaf_generator(
+    example_leaf,
+    ('name',
+     ('event_code', 'code')
+    ))
 
 for item_dict, jamaid in example_item_generator:
     print(item_dict['name'], item_dict['code'])
