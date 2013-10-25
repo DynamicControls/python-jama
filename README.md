@@ -25,9 +25,11 @@ documentation for getItem](http://ws.jamasoftware.com/latest/com/jamasoftware/co
 
 The Python call to `getItem` simply looks like:
 
-    from jama import API
-    api = API()
-    item = api('getItem', 1234)
+```python
+from jama import API
+api = API()
+item = api('getItem', 1234)
+```
 
 Note that the `WsAuth token` is required by all Jama api calls so is handled
 by `python-jama`. The `item` returned by a call to `jama.api` is a `Suds`
@@ -35,16 +37,18 @@ object. See the [suds documentation](https://fedorahosted.org/suds/wiki/Document
 
 An example which gets all direct child items of a particular document type:
 
-    example_leaf = Leaf(JAMA_EXAMPLE_NODE_ID, JAMA_EXAMPLE_TYPE)
+```python
+example_leaf = Leaf(JAMA_EXAMPLE_NODE_ID, JAMA_EXAMPLE_TYPE)
 
-    example_item_generator = api.create_leaf_generator(
-        example_leaf,
-        ('name',
-         ('event_code', 'code')
-        ))
+example_item_generator = api.create_leaf_generator(
+    example_leaf,
+    ('name',
+     ('event_code', 'code')
+    ))
 
-    for item_dict, jamaid in example_item_generator:
-        print(item_dict['name'], item_dict['code'])
+for item_dict, jamaid in example_item_generator:
+    print(item_dict['name'], item_dict['code'])
+```
 
 ## Installation
 
