@@ -59,7 +59,7 @@ or download the source package from the project page on [github][2] and run
 
 Development is carried out on the [github project page][2], patches and pull requests welcome!
 
-[1]: http://ws.jamasoftware.com/latest/com/jamasoftware/contour/ws/v3/ContourSoapServiceImpl.html
-[2]: https://github.com/dynamiccontrols/python-jama/
-[3]: http://ws.jamasoftware.com/latest/com/jamasoftware/contour/ws/v3/ContourSoapServiceImpl.html#getItem(com.jamasoftware.contour.ws.v3.WsAuth, java.lang.Long)
-[4]: https://fedorahosted.org/suds/wiki/Documentation
+[1]: <http://ws.jamasoftware.com/latest/com/jamasoftware/contour/ws/v3/ContourSoapServiceImpl.html>
+[2]: <https://github.com/dynamiccontrols/python-jama/>
+[3]: <http://ws.jamasoftware.com/latest/com/jamasoftware/contour/ws/v3/ContourSoapServiceImpl.html#getItem(com.jamasoftware.contour.ws.v3.WsAuth, java.lang.Long)>
+[4]: <https://fedorahosted.org/suds/wiki/Documentation>

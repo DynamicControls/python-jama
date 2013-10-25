@@ -11,7 +11,7 @@ setup(
     name = "python-jama",
     version = VERSION,
     description="A Python wrapper for the Jama API",
-    long_description=open('README').read(),
+    long_description=open('README.md').read(),
     author=['Brian Thorne', 'Phillip Dixon', 'Donovan Johnson'],
     author_email=['bthorne@dynamiccontrols.com', 'pdixon@dynamiccontrols.com', 'djohnson@dynamiccontrols.com'],
 
